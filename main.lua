@@ -267,6 +267,13 @@ function scene:onEnterFrame()
 			local body = sprite.body
 			--get body coordinates
 			local bodyX, bodyY = body:getPosition()
+			
+			--test velocity
+			local type = body.type
+			if (type == "ball" or type == "star" or type == "poly" or type == "rect") then
+				local velX,velY = body:getLinearVelocity()
+				print(type .. " velocity:  " .. velX,velY)
+			end
 			--apply coordinates to sprite
 			sprite:setPosition(bodyX, bodyY)
 			--apply rotation to sprite
@@ -283,8 +290,8 @@ function scene:onBeginContact(e)
     local bodyA = fixtureA:getBody()
     local bodyB = fixtureB:getBody()
 	
-	--local sound = Sound.new("blip.mp3")
-	--local sound2 = Sound.new("woodenJoint.mp3")
+	local sound = Sound.new("./Sound Effects/single-vocal-bounce.wav")
+	local sound2 = Sound.new("./Sound Effects/click_x.mp3")
      
     --check if first colliding body is bouncy
     --it should be first, because it was created before dragging ball object
@@ -295,18 +302,10 @@ function scene:onBeginContact(e)
         --delay 1 milisecond for 1 time
         local timer = Timer.new(1, 1)
         --setting timer callback
+
         timer:addEventListener(Event.TIMER, function()
-            --add force to ball
-			local velX, velY = bodyB:getLinearVelocity()
-			local posX, posY = bodyB:getPosition()
-			
-			--print linear velocity
-			if (bodyB.type == "ball") then
-				print(velX, velY)
-			end
-			--bodyB:applyForce(forceX * math.abs(velX) * 10, forceY * math.abs(velY) * 10, posX, posY)
-			bodyB:applyForce(velX*75, -velY*150, posX, posY)			
-			--local channel = sound:play()
+            			
+			local channel = sound:play()
         end)
 		
         --start timer
