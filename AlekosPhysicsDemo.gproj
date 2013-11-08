@@ -2,26 +2,41 @@
  <properties autorotation="0" encrypt="0" fps="60" scaleMode="0" mouseToTouch="1" iosDevice="0" packageName="com.yourdomain.physicsDemo" logicalHeight="800" logicalWidth="480" mouseTouchOrder="0" retinaDisplay="0" touchToMouse="1" assetsOnly="0" orientation="0" architecture="1">
   <imageScales/>
  </properties>
- <folder name="Sound Effects">
-  <file source="C:/Users/Αλέκος/Desktop/single-vocal-bounce.wav"/>
-  <file source="C:/Users/Αλέκος/Desktop/poink.wav"/>
-  <file source="C:/Users/Αλέκος/Desktop/car_start.wav"/>
-  <file source="C:/Users/Αλέκος/Desktop/blip.wav"/>
-  <file source="C:/Users/Αλέκος/Desktop/click_x.mp3"/>
+ <folder name="Classes">
+  <file source="../Scene-Manager-master/easing.lua"/>
+  <file source="../Scene-Manager-master/button.lua"/>
+  <file source="../Scene-Manager-master/scenemanager.lua"/>
  </folder>
- <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/physicsData.lua"/>
  <folder name="ArtAssets">
-  <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/joint.png"/>
-  <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/curved_object_2.png"/>
-  <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/curved_object_1.png"/>
-  <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/corner_2.png"/>
-  <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/corner_1.png"/>
-  <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/bouncy.png"/>
-  <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/base_triangle.png"/>
-  <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/star.png"/>
-  <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/ball.png"/>
-  <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/rect.png"/>
-  <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/poly.png"/>
+  <folder name="Images">
+   <folder name="GUI">
+    <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/backBtnUP.png"/>
+    <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/backBtnDOWN.png"/>
+    <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/playBtnUP.png"/>
+    <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/playBtnDOWN.png"/>
+   </folder>
+   <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/Logo.png"/>
+   <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/ball.png"/>
+   <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/star.png"/>
+   <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/bouncy.png"/>
+   <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/base_triangle.png"/>
+   <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/corner_1.png"/>
+   <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/corner_2.png"/>
+   <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/curved_object_1.png"/>
+   <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/curved_object_2.png"/>
+   <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/joint.png"/>
+   <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/water.png"/>
+   <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/rect.png"/>
+   <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/poly.png"/>
+  </folder>
+  <folder name="Sound Effects">
+   <file source="C:/Users/??????/Desktop/blip.WAV"/>
+   <file source="C:/Users/??????/Desktop/click_x.WAV"/>
+   <file source="C:/Users/??????/Desktop/poink.WAV"/>
+  </folder>
  </folder>
+ <file source="level1.lua"/>
  <file source="main.lua"/>
+ <file source="menu.lua"/>
+ <file source="../../Gideros Mobile/AlekosPhysicsDemo Art Assets/physicsData.lua"/>
 </project>
